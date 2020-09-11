@@ -1,0 +1,37 @@
+<template >
+    <lightning-card if:true={ourData} title="Budget Data" icon-name="custom:custom41">
+        <div class="slds-card__body slds-card__body_inner slds-border_top">                
+            <ul class="slds-page-header__detail-list">
+                <li class="slds-page-header__detail-item">
+                    <div class="slds-text-title slds-truncate" title="Status">Status</div>
+                    <div>{ourData.Status}</div>                        
+                </li>
+                <li class="slds-page-header__detail-item">
+                    <div class="slds-text-title slds-truncate" title="YTD">YTD</div>
+                    <div title="YTD">${ourData.YTD}</div>
+                </li>
+                <li class="slds-page-header__detail-item">
+                    <div class="slds-text-title slds-truncate" title="Type">Type</div>
+                    <div title="Type">{ourData.Type}</div>
+                </li>
+                <li class="slds-page-header__detail-item">
+                    <div class="slds-text-title slds-truncate" title="Adjusted">Adjustment</div>
+                    <div title="Adjusted">{ourData.Adjustment}%</div>
+                </li>
+                <li class="slds-page-header__detail-item">
+                    <div class="slds-text-title slds-truncate" title="Authorized">Authorized</div>
+                    <div title="Status">{ourData.Authorized}</div>
+                </li>
+                <li class="slds-page-header__detail-item">
+                    <div class="slds-text-title slds-truncate" title="Other">Other</div>
+                    <div title="Terms">{ourData.Other}</div>
+                </li>
+            </ul>
+        </div>        
+        <footer class="slds-card__footer">
+            <a class="slds-card__footer-action">
+                View More                
+            </a>
+        </footer>
+    </lightning-card>
+</template>
