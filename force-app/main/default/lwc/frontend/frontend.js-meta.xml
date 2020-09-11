@@ -3,8 +3,10 @@
     <apiVersion>49.0</apiVersion>
     <isExposed>true</isExposed>
     <masterLabel>Budget Data</masterLabel>
-    <description>Provides Budget Insights</description>
+    <description>Provides Budget Insights</description>    
     <targets>
-        <target>lightning__RecordPage</target>
+      <target>lightningCommunity__Page</target>
+      <target>lightningCommunity__Default</target>
+      <target>lightning__RecordPage</target>
     </targets>
 </LightningComponentBundle>
